@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Homer Simpsons",
+    "email": "home@homer.com",
+    "age": 45
+  },
+  {
+    "name": "Rick Sanchez",
+    "email": "rick@rick.com",
+    "age": 60
+  },
+  {
+    "name": "Eric Cartman",
+    "email": "eric@eric.com",
+    "age": 10
+  }
+]
