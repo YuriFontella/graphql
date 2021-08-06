@@ -4,7 +4,7 @@ const fp = require('fastify-plugin')
 
 const mercurius = require('mercurius')
 
-const { typeDefs, resolvers } = require('../graphql/infra/merge')
+const { typeDefs, resolvers } = require('../../gql/merge')
 
 const { makeExecutableSchema } = require('@graphql-tools/schema')
 
