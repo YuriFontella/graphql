@@ -11,15 +11,7 @@ const app = fastify({
 })
 
 app.register(autoload, {
-  dir: join(__dirname, 'src/infra/plugin')
-})
-
-app.register(autoload, {
-  dir: join(__dirname, 'src/infra/query')
-})
-
-app.register(autoload, {
-  dir: join(__dirname, 'src/infra/route')
+  dir: join(__dirname, 'src/infra')
 })
 
 app.listen(process.env.PORT || 4000, '0.0.0.0')
