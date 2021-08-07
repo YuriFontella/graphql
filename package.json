@@ -5,6 +5,7 @@
   "scripts": {
     "start": "NODE_ENV=production node app.js",
     "dev": "NODE_ENV=development nodemon app.js",
+    "migrate": "knex migrate:latest --knexfile=config/knexfile",
     "install:clean": "rm -rf node_modules package-lock.json && npm install"
   },
   "keywords": [
