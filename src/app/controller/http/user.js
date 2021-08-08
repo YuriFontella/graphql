@@ -6,11 +6,16 @@ const rule = require(resolve('src/app/rule/user'))
 
 module.exports = ({ query }) => {
 
-  const users = () => {
-    return rule.users(query)
+  const users = async () => {
+    return await rule.users(query)
+  }
+
+  const addUser = async (request) => {
+    return await rule.addUser(query, request.body)
   }
 
   return {
-    users
+    users,
+    addUser
   }
 }

@@ -9,4 +9,5 @@ module.exports = async (app) => {
   const controller = UserController(app)
 
   app.get('/', controller.users)
+  app.post('/', controller.addUser)
 }
