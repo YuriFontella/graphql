@@ -18,6 +18,6 @@ const schema = makeExecutableSchema({
 module.exports = fp(async (app) => {
   app.register(mercurius, {
     schema,
-    graphiql: true
+    graphiql: process.env.NODE_ENV === 'development'
   })
 })
