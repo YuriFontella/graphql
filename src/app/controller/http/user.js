@@ -1,17 +1,13 @@
 'use strict'
 
-const { resolve } = require('path')
-
-const rule = require(resolve('src/app/rule/user'))
-
-module.exports = ({ query }) => {
+module.exports = (app) => {
 
   const users = async () => {
-    return await rule.users(query)
+    return await app.RuleUser.users()
   }
 
   const addUser = async (request) => {
-    return await rule.addUser(query, request.body)
+    return await app.RuleUser.addUser(request.body)
   }
 
   return {
