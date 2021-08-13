@@ -1,9 +1,5 @@
 ## REST
 
-```bash
-http://localhost:4000/api/users
-```
-
 GET 
 ```bash
 http get http://localhost:4000/api/users
